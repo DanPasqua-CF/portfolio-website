@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" , name="viewport">
+  <title>Rise and Shine</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <nav>
+        <ul role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem">About Me</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem">Work</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Back to Top button -->
+      <a href="#" class="button back-to-top-button" alt="Back to Top button">Back to Top</a>
+    </div>
+    <!-- Add logo here -->
+    <img src="./img/espresso-cup.jpg" alt="Cartoon logo of an espresso cup" />
+  </header>
+
+  <main>
+    <div class="profile">
+      <h1>Contact Me</h1>
+      <form action="" method="post" id="contact-form" style="flex-direction: column;">
+        <label class="standard-label" for="contact-email">Email:</label>
+        <input type="email" id="contact-email" style="display: block;" required>
+
+        <label class="standard-label" for="telephone-input" style="display: block; padding-top: .5em">Telephone:</label>
+        <input type="tel" id="telephone-input" style="display: block;" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+
+        <label class="standard-label" for="message-input" style="display: block; padding-top: .5em">Message:</label>
+        <textarea maxlength="240" id="message-input" required></textarea>
+      </form>
+      <a href="#" class="button">Send message</a>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <p>Connect with me</p>
+    <div class="social-media">
+      <!-- Social media links -->
+      <a href="https://github.com/" target="_blank"><img src="./img/github.svg" alt="GitHub logo"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin.svg" alt="LinkedIn logo"></a>
+      <a href="https://x.com/?lang=en" target="_blank"><img src="./img/x.svg" alt="X logo"></a>
+    </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
