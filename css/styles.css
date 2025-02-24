@@ -49,26 +49,65 @@ main {
 
 /***** HEADER *****/
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-header img {
-  height: 100px;
-  width: 100px;
 }
 
 nav ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: -40px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
   column-gap: 20px;
+  font-size: 18px;
+  font-weight: 350;
 }
 
 /***** HOME *****/
 .profile {
   flex: auto;
+}
+
+.profile-container {
+  display: inline-block;
+}
+
+.profile__name {
+  font-style: italic;
+  font-size: 120px;
+  font-weight: 300;
+  overflow: hidden;
+  width: 0;
+  margin-bottom: -10px;
+  white-space: nowrap;
+  animation:
+    typing 1.5s steps(10, end) forwards,
+    blinking-cursor 0.75s step-end infinite;
+  border-right: 1px solid var(--primary-dark-color);
+}
+
+.profile__information {
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 300;
+  overflow: hidden;
+  width: 0;
+  white-space: nowrap;
+  animation:
+    typing 2s steps(40, end) forwards,
+    blinking-cursor 0.75s step-end infinite;
+  animation-delay: 1.75s;
+  margin-top: 0;
 }
 
 .profile__portrait {
@@ -261,19 +300,19 @@ button:focus,
 }
 
 .window {
-  animation: 4s color-change infinite alternate linear;
+  animation: cubic-bezier(0.23, 1, 0.32, 1) color-change infinite alternate linear;
 }
 
 .building-window {
-  animation: 8s building-color-change infinite alternate linear;
+  animation: 1.75s building-color-change infinite alternate linear;
 }
 
 .church-window {
-  animation: 5s color-change infinite alternate linear;
+  animation: 3s color-change infinite alternate linear;
 }
 
 .large-window {
-  animation: 10s large-window-color-change infinite alternate linear;
+  animation: 2s large-window-color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
@@ -308,4 +347,26 @@ button:focus,
   max-width: 100%;
   height: auto;
   margin: 50px auto 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes blinking-cursor {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: var(--primary-dark-color);
+  }
 }
