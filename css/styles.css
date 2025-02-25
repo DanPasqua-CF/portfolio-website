@@ -84,10 +84,9 @@ nav ul {
 
 .profile__name {
   font-style: italic;
-  font-size: 120px;
+  font-size: 100px;
   font-weight: 300;
   overflow: hidden;
-  width: 0;
   margin-bottom: -10px;
   white-space: nowrap;
   animation:
@@ -98,7 +97,7 @@ nav ul {
 
 .profile__information {
   font-style: italic;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 300;
   overflow: hidden;
   width: 0;
@@ -250,6 +249,45 @@ button:focus,
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .profile__name {
+    font-size: 14vw;
+    white-space: wrap;
+    animation: typing 1.25s steps(25, end) forwards;
+    border-right: none;
+  }
+
+  .profile__information {
+    font-size: 7vw;
+    width: 0;
+    white-space: wrap;
+    animation: typing 1s steps(40, end) forwards;
+    animation-delay: 1.5s;
+    margin-top: 20px;
+  }
+
+  .profile__information span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  .profile__name {
+    font-size: 8vw;
+    animation:
+      typing 1.25s steps(25, end) forwards,
+      blinking-cursor 0.75s step-end infinite;
+  }
+
+  .profile__information {
+    font-size: 2.5vw;
+    width: 0;
+    animation: typing 2s steps(40, end) forwards;
+    animation-delay: 1.5s;
+    margin-top: 20px;
+  }
+}
+
 @keyframes color-change {
   0% {
     fill: var(--colorChange-0);
@@ -348,13 +386,11 @@ button:focus,
   }
 
   to {
-    width: 50%;
+    width: 40%;
   }
 }
 
 @keyframes blinking-cursor {
-
-  from,
   to {
     border-color: transparent;
   }
