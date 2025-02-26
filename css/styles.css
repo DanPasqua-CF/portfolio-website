@@ -84,10 +84,10 @@ nav ul {
 
 .profile__name {
   font-style: italic;
-  font-size: 100px;
+  font-size: 13vw;
   font-weight: 300;
   overflow: hidden;
-  margin-bottom: -10px;
+  margin-bottom: -5px;
   white-space: nowrap;
   animation:
     typing 1.5s steps(10, end) forwards,
@@ -97,7 +97,7 @@ nav ul {
 
 .profile__information {
   font-style: italic;
-  font-size: 32px;
+  font-size: 4.25vw;
   font-weight: 300;
   overflow: hidden;
   width: 0;
@@ -146,6 +146,8 @@ th {
 
 footer p {
   margin-top: 10px;
+  font-size: 1.5vw;
+  margin-bottom: 2vh;
 }
 
 .social-media {
@@ -154,6 +156,7 @@ footer p {
   align-self: center;
   flex-direction: row;
   text-align: center;
+  margin-top: 0;
 }
 
 .social-media img {
@@ -249,7 +252,7 @@ button:focus,
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 992px) {
+/* @media screen and (min-width: 320px) and (max-width: 992px) {
   .profile__name {
     font-size: 14vw;
     white-space: wrap;
@@ -286,7 +289,7 @@ button:focus,
     animation-delay: 1.5s;
     margin-top: 20px;
   }
-}
+} */
 
 @keyframes color-change {
   0% {
@@ -386,7 +389,7 @@ button:focus,
   }
 
   to {
-    width: 40%;
+    width: 80%;
   }
 }
 
@@ -395,7 +398,7 @@ button:focus,
     border-color: transparent;
   }
 
-  50% {
+  80% {
     border-color: var(--primary-dark-color);
   }
 }
