@@ -234,6 +234,8 @@ button:focus,
   display: flex;
   margin-top: 10px;
   padding: 5px 10px;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
 }
 
 @media all and (max-width: 500px) {
