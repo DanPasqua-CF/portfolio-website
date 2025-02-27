@@ -152,6 +152,7 @@ th {
   border: 1px solid black;
   background-color: #cf945e;
   color: #45333a;
+  text-align: left;
 }
 
 /***** FOOTER *****/

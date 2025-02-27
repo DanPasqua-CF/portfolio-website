@@ -142,6 +142,7 @@ th {
   border: 1px solid var(--tableBlack);
   background-color: var(--secondary-background-color);
   color: var(--primary-dark-color);
+  text-align: left;
 }
 
 /***** FOOTER *****/
