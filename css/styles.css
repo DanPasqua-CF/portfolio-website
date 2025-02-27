@@ -108,7 +108,7 @@ nav ul {
     typing 2s steps(40, end) forwards,
     blinking-cursor 0.75s step-end infinite;
   animation-delay: 1.75s;
-  margin-top: 0;
+  margin-top: 1vh;
 }
 
 .profile-img {
@@ -151,7 +151,8 @@ th {
   flex-direction: column;
   text-align: center;
   background-color: var(--footer-background-color);
-  margin: 10px 0;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   flex-shrink: 0;
 }
 
@@ -187,6 +188,7 @@ button,
   border-bottom: 2px solid var(--buttonBorderBottom);
   transition-duration: var(--transitionDuration);
   transition-property: opacity;
+  margin-top: 1vh;
 }
 
 button:hover,
