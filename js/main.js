@@ -51,8 +51,8 @@ const slides = [
     link: "https://github.com/DanPasqua-CF/simple-js-app",
     technologies: [
       { name: "JavaScript", icon: "./img/tech/javascript.svg" },
-      { name: "HTML5", icon: "./img/tech/html5.svg" },
-      { name: "CSS3", icon: "./img/tech/css3.svg" }
+      { name: "HTML5", icon: "./img/tech/HTML5.svg" },
+      { name: "CSS3", icon: "./img/tech/CSS3.svg" }
     ]
   },
   {
