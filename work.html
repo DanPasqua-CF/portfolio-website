@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>My Work</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <nav>
+        <ul role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem">About</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <div class="profile">
+
+      <div class="flipbook-container">
+        <div class="flipbook-image-wrapper fade-in" id="flipbook-slide">
+          <img class="flipbook-image" id="flipbook-img" src="./img/my-work/Let's Talk.jpeg" alt="Project screenshot">
+          <div class="flipbook-caption">
+            <div class="flipbook-title-wrapper">
+              <h2 id="flipbook-title">Let's Talk</h2>
+              <a id="flipbook-github-link" href="#" target="_blank" rel="noopener noreferrer" class="github-icon-link">
+                <img src="./img/contact-icons/github.svg" alt="View on GitHub" class="github-icon">
+              </a>
+              <div id="flipbook-tech-stack" class="tech-stack"></div>
+            </div>
+            <p id="flipbook-description">
+              A chat application built with React and Firebase for real-time communication.
+            </p>
+          </div>
+        </div>
+
+        <div class="flipbook-controls">
+          <button class="flipbook-btn" id="prev-btn">
+            <span>←</span> Previous
+          </button>
+          <span class="flipbook-counter">
+            <span id="current-slide">1</span> / <span id="total-slides">6</span>
+          </span>
+          <button class="flipbook-btn" id="next-btn">
+            Next <span>→</span>
+          </button>
+        </div>
+
+        <div class="flipbook-dots" id="dots-container"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

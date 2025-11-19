@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Contact Me</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <nav>
+        <ul role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem">About</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <div class="profile">
+      <form action="" method="post" id="contact-form">
+        <div class="form-group">
+          <label class="standard-label" for="contact-email">Email:</label>
+          <input type="email" id="contact-email" required>
+        </div>
+
+        <div class="form-group">
+          <label class="standard-label" for="telephone-input">Telephone:</label>
+          <input type="tel" id="telephone-input" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+        </div>
+
+        <div class="form-group">
+          <label class="standard-label" for="message-input">Message:</label>
+          <textarea maxlength="240" id="message-input" required></textarea>
+        </div>
+
+        <a href="#" class="button">Send message</a>
+        
+        <div class="social-media">
+          <a href="https://github.com/" target="_blank"><img src="./img/contact-icons/github.svg" alt="GitHub logo"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="./img/contact-icons/linkedin.svg" alt="LinkedIn logo"></a>
+          <a href="mailto:dan.pasqua.cf@gmail.com" target="_blank"><img src="./img/contact-icons/email.svg" alt="Email logo"></a>
+          <a href="tel:+4128629168" target="_blank"><img src="./img/contact-icons/phone.svg" alt="Telephone logo"></a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>
