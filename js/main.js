@@ -65,6 +65,18 @@ const slides = [
       { name: "HTML5", icon: "./img/tech/HTML5.svg" },
       { name: "CSS3", icon: "./img/tech/CSS3.svg" }
     ]
+  },
+  {
+    image: "./img/my-work/recipe-app.jpg",
+    title: "Recipe App",
+    description: "A simple recipe management application built with Python and Django.",
+    link: "https://github.com/DanPasqua-CF/recipe-app",
+    technologies: [
+      { name: "Python", icon: "./img/tech/python.svg" },
+      { name: "Django", icon: "./img/tech/django.svg" },
+      { name: "HTML5", icon: "./img/tech/HTML5.svg" },
+      { name: "CSS3", icon: "./img/tech/CSS3.svg" }
+    ]
   }
 ];
 
